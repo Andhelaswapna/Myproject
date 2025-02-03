@@ -6,6 +6,13 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import meditation from "../../assets/meditation.jpg"
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { IoCallOutline } from "react-icons/io5";
+import { RiFacebookLine } from "react-icons/ri";
+import { CiTwitter } from "react-icons/ci";
+import { CiYoutube } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
 import yoga from "../../assets/yoga.jpg"
 import ramu from "../../assets/ramu.jpg"
 import ramu1 from "../../assets/ramu1.jpg"
@@ -14,6 +21,7 @@ import img1 from "../../assets/img1.jpg"
 import img2 from "../../assets/img2.jpg"
 import img3 from "../../assets/img3.jpg"
 import img4 from "../../assets/img4.jpg"
+import aa from "../../assets/aa.png"
 import { GoSquareFill } from "react-icons/go";
 function Nav() {
     return (
@@ -64,11 +72,17 @@ function Nav() {
                 </ul>
             </div>
             {/* nav end */}
-              <div className="g">
-               <h1 className="a1">Discover Inner Peace & Spiritual Awakening</h1>
-               <p className="a2">Join Ramu Master on a journey of self-realization and holistic well-being through meditation and spiritual wisdom.</p>
-              </div>
-            
+            <div className="g">
+                <div>
+                <h1 className="a1">Discover Inner Peace & Spiritual Awakening</h1>
+                <p className="a2">Join Ramu Master on a journey of self-realization and holistic well-being through meditation and spiritual wisdom.</p>
+                <button type="button" className="r2">Begin Now</button>
+                </div>
+                <div>
+                    <img src={aa} className="bn1" alt=""/>
+                </div>
+            </div>
+
             <h1 className="h">Introducing <h1 className="i">RAMU MASTER</h1></h1>
             <div className="row1">
                 <div className="col-md-6">
@@ -78,6 +92,7 @@ function Nav() {
                 <div className="col-md-6">
                     <p className="j">RAMU Master, a distinguished Spiritual Science Teacher and the visionary Founder and Chairman of the Dhyana Osmania Foundation and Dhyana Dharma Ashram. With an unwavering commitment to meditation and spiritual science, Ramu Master has been a guiding light for individuals seeking inner peace, self-realization, and holistic well-being.</p>
                     <p className="j">Born on July 26, 1980. Ramu Master’s path to spirituality began at an early age. While holding an M.Sc. in Mathematics and Physics, he was drawn to the exploration of the human mind and spirit. This passion led to the founding of the Dhyana Osmania Foundation and Dhyana Dharma Ashram—places dedicated to the spread of spiritual knowledge and meditation practices that have transformed lives.</p>
+                    <button type="button" className="r1">Learn More</button>
                 </div>
             </div>
             <h1 className="m">Technology And Philosophy</h1>
@@ -143,71 +158,97 @@ function Nav() {
                     <img src={img} className="o" alt="" />
                 </div>
             </div>
-            <h1 className="s">Contact Us</h1>
-            <div className="t">
-             <form>
-                     <label for="name" className="v">Full Name*</label>
-                      <input type="text" id="name" className="w" placeholder="First Name"/>
-                      <label for="email" class="v">EMail*</label>
-                      <input type="email" id="email" class="w" placeholder="EMail"/>
-                      <label for="phno" class="v">Phone/Mobile No*</label>
-                      <input type="number" id="phno" class="w" placeholder="Mobile Number"/>
-                      <label for="Address" class="v">Address</label>
-                      <input type="text" id="Address" class="x"/>
-                      <label for="upload" class="v">Upload Aadhar</label>
-                      <input type="file" class="y" id="upload"/>
-                      <p class="z">Allowed Type(s): .pdf, .doc, .docx</p>
-                      <input type="checkbox"class="aa" id="checkbox"/>
-                      <label for="checkbox" class="ab">By using this form you agree with the storage and handling of your data by this website. *</label><br/>
-                      <button type="submit" class="ac">Submit</button>
-             </form>
-             </div>
-                
-             <div className="yl">
-           <div className="yyyyy">
-            <div className="ym">
-                <h6 className="yo">Others Links:</h6>
-                <ul type="none">
-                    <li><GoSquareFill className="yp" />Home</li>
-                    <li><GoSquareFill className="yp" />Booking Journey</li>
-                    <li><GoSquareFill className="yp" />Current projects</li>
-                    <li><GoSquareFill className="yp" />Experience</li>
-                    <li><GoSquareFill className="yp" />RSS Experience</li>
-                    <li><GoSquareFill className="yp" />Experience in Astral Travelling</li>
-                    <li><GoSquareFill className="yp" />Hyponotism</li>
-                   
-                </ul>
+
+            <div className="row3">
+
+                <div className="s">
+                    <h2 className="t">Get in Touch</h2>
+                    <p className="tt">We are available 24/7 by call, or e-mail. You can also use our contact form</p>
+                    <div className="U">
+                        <IoLocationOutline className="b1" />
+                        <h5 className="b2">Address</h5>
+                        <p className="b3">Hyderabad, Telangana</p>
+                    </div>
+                    <div className="U">
+                        <IoCallOutline className="b1" />
+                        <h5 className="b2">Phone-Number</h5>
+                        <p className="b3">+918234567887</p>
+                    </div>
+                    <div className="U">
+                        <MdOutlineEmail className="b1" />
+                        <h5 className="b2">E-mail</h5>
+                        <p className="b3">Ramu@gmail.com</p>
+                    </div>
+                    <hr/>
+                    <p><b>Follow Us:</b></p>
+                    <RiFacebookLine className="b8" />
+                    <CiTwitter className="b8" />
+                    <CiYoutube className="b8"/>
+                    <CiInstagram className="b8"/>
+
+                </div>
+                <div className="b4">
+                    <h4 className="b5">Send a Message</h4>
+                    <form>
+                        <input type="text" placeholder="Name" className="input-dash" />
+                        <input type="Email" placeholder="E-mail Address" className="input-dash" />
+                        <input type="text" placeholder="Message" className="input-dash1" />
+                        <p className="b6">By Submitting you are Agree to the processing of your personal data Which you provided to us.</p>
+                        <button type="button" className="b7">Submit</button>
+                    </form>
+                </div>
             </div>
-            <div className="yn">
-                <ul type="none">
-                    <li><GoSquareFill className="yp"/>Jouney with patriji</li>
-                    <li><GoSquareFill className="yp"/>Social Services</li>
-                    <li><GoSquareFill className="yp"/>Influence by</li>
-                    <li><GoSquareFill className="yp"/>Contact Us</li>
-                    <li><GoSquareFill className="yp"/>Inspired by</li>
-                    <li><GoSquareFill className="yp"/>Case Studies done</li>
-                    <li><GoSquareFill className="yp"/>Expert in</li>
-                    <li><GoSquareFill className="yp"/>Vision Mission</li>
-                </ul>
+
+            <div className="yl">
+                <div className="yyyyy">
+                    <div className="ym">
+                        <h6 className="yo">Others Links:</h6>
+                        <ul type="none" className="b9">
+                            <li>Home</li>
+                            <li>Booking Journey</li>
+                            <li>Current projects</li>
+                            <li>Experience</li>
+                            
+
+                        </ul>
+                    </div>
+                    <div className="ym">
+                        <h6 className="yo">Get free Sources:</h6>
+                        <ul type="none" className="b9">
+                        <li>Hatha Yoga</li>
+                            <li>Vinyasa Yoga</li>
+                            <li>Bikram Yoga</li>
+                            <li>Iyengar Yoga</li>
+
+                        </ul>
+                    </div>
+                    <div className="ym">
+                        <h6 className="yo">Social Plugins:</h6>
+                        <ul type="none" className="b9">
+                        <li>Youtube</li>
+                            <li>FaceBook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>  
+                        </ul>
+                    </div>
+                    <div className="yn">
+                    
+                        <ul type="none" className="b11">
+                            <h4 className="b10">Contact Address:</h4>
+                            <li><b>Phone:</b>8234567899</li>
+                            <li><b>Email:</b>Ramu@gmail.com</li>
+                      
+                            <li><b>Address:</b>Hyderabad,Telangana</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr className="yr"></hr>
+                <div className="yq">
+                    <p className="b12">Copyright © 2014-2025 Ramu Masters Meditation, All Rights Reserved</p>
+                </div>
+                <hr className="yr"></hr>
             </div>
-            <div className="yn">
-            <h6 className="yo">Social Plugin:</h6>
-            <ul type="none">
-                <li><GoSquareFill className="yp"/>Youtube</li>
-                <li><GoSquareFill className="yp"/>FaceBook</li>
-                <li><GoSquareFill className="yp"/>Instagram</li>
-                <li><GoSquareFill className="yp"/>Twitter</li>
-                {/* <li><GoSquareFill className="yp"/>Package Tours</li> */}
-            </ul>
-            </div>
-           </div>
-           <hr className="yr"></hr>
-           <div className="yq">
-            <p>Copyright © 2014-2025 Ravi Masters Meditation, All Rights Reserved</p>
-           </div> 
-           <hr className="yr"></hr>
-          </div>      
-                 
+
         </>
 
     )
